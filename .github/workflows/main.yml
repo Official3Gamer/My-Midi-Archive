@@ -26,7 +26,7 @@ jobs:
       - name: Run the Python script
         run: |
           echo "Running script: sojrtssbir.py"
-          python -u sojrtssbir.py
+          python sojrtssbir.py
 
       - name: List generated files
         run: |
