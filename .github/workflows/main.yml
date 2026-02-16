@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,11 +26,11 @@ jobs:
       - name: Run the Python script
         run: |
           echo "Running script: sojrtssbir.py"
-          python sojrtssbir.py
+          python -u sojrtssbir.py
 
       - name: List generated files
         run: |
-          echo "Files in workspace:"
+          echo "Workspace files"
           ls -la
 
       - name: Upload MIDI artifact
